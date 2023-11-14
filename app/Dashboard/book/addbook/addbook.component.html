@@ -1,0 +1,322 @@
+
+        
+     
+<div class="offcanvas offcanvas-start  text-dark sidebar-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-body">
+       <ul class="navbar-nav">
+
+       
+       <li class="nav-item">
+         <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#admin" role="button" aria-expanded="false" aria-controls="admin">
+         <div class="text-secondary small text-uppercase fw-bold text-center"><i class="fas fa-user-secret"></i><br> Admin-Panel<span class="right-icon float-end"><i class="fas fa-chevron-down"></i></span></div>
+      </a>
+       <li class="nav-item">
+         
+           <div class="collapse" id="admin">
+           <div>
+              <ul class="navbar-nav ps-3">
+                  <li>
+                    <a class="nav-link" routerLink="/admin"><i class="fa fa-user me-2"></i>My Profile</a>
+                  </li>
+                  <li>
+                   <a class="nav-link" routerLink="/"><i class="fa-solid fa-right-from-bracket me-2"></i>Return Home page</a>
+                 </li>
+                 
+                   </ul>
+               
+        </div>
+        </div>
+       </li>
+        
+       <li class="nav-item my-0">
+        <hr />  
+     </li>
+
+
+       <li class="nav-item">
+       <div class="text-secondary small text-uppercase fw-bold">Core</div>
+       </li>
+       <li class="nav-item">
+       <a class="nav-link active" aria-current="page" routerLink="/admin"><i class="fas fa-tachometer-alt-fast"></i> Dashboard</a>
+       </li>
+            
+       <li class="nav-item my-0">
+         <hr />
+       </li>
+
+       <li class="nav-item">
+       <div class="text-secondary small text-uppercase fw-bold">Inventory</div>
+       </li>
+
+       <li class="nav-item">
+       <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#booksmgt" role="button" aria-expanded="false" aria-controls="booksmgt">
+       <i class="fas fa-book me-2"></i>Books Management <span class="right-icon float-end"><i class="fas fa-chevron-down"></i></span>
+       </a>
+       <div class="collapse" id="booksmgt">
+           <div>
+              <ul class="navbar-nav ps-3">
+                 <li>
+                    <a class="nav-link" routerLink="/addbook"><i class="far fa-plus me-2"></i>Add Book</a>
+                     </li>
+                  <li>
+                   <a class="nav-link" routerLink="/managebook"><i class="fas fa-list me-2"></i>Mange Book</a>
+                   </li>
+                      
+                     </ul>
+                    
+              </div>
+           </div>
+
+             <li class="nav-item">
+               <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#Mgmt" role="button" aria-expanded="false" aria-controls="Mgmt">
+                   <i class="fas fa-users me-1"></i>Members Management <span class="right-icon float-end"><i class="fas fa-chevron-down"></i></span>
+                 </a>
+                <div class="collapse" id="Mgmt">
+                <div>
+                   <ul class="navbar-nav ps-3">
+                       <li>
+                         <a class="nav-link" routerLink="/addmember"><i class="far fa-plus me-2"></i>Add Member</a>
+                       </li>
+                       <li>
+                         <a class="nav-link" routerLink="/managemember"><i class="fas fa-list me-2"></i>Manage Member</a>
+                       </li>
+                        </ul>
+                    
+                 </div>
+                </div>
+            </li>
+
+           <li class="nav-item">
+             <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#cm" role="button" aria-expanded="false" aria-controls="cm">
+                 <i class="fa-solid fa-pen-fancy me-1"></i>Classification Management<span class="right-icon float-end"><i class="fas fa-chevron-down"></i></span>
+               </a>
+              <div class="collapse" id="cm">
+              <div>
+                 <ul class="navbar-nav ps-3">
+                     <li>
+                       <a class="nav-link" routerLink="/author"><i class="fas fa-book-reader me-2"></i>Author Details</a>
+                     </li>
+                     <li>
+                       <a class="nav-link" routerLink="/publisher"><i class="fas fa-warehouse me-2"></i>Publisher details</a>
+                     </li>
+                      </ul>
+                  
+           </div>
+           </div>
+         </li>
+
+           <li class="nav-item my-0">
+               <hr />  
+            </li>
+
+            <li class="nav-item">
+              <div class="text-secondary small text-uppercase fw-bold">Business</div>
+            </li>
+
+            <li class="nav-item">
+               <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#booksloan" role="button" aria-expanded="false" aria-controls="booksloan">
+                   <i class="fa fa-institution me-2"></i>Books Loan <span class="right-icon float-end"><i class="fas fa-chevron-down"></i></span>
+                 </a>
+                <div class="collapse" id="booksloan">
+                <div>
+                   <ul class="navbar-nav ps-3">
+                       <li>
+                         <a class="nav-link" routerLink="/issue"><i class="far fa-plus me-2"></i>isuue Book</a>
+                       </li>
+                       <li>
+                         <a class="nav-link" routerLink="/issued"><i class="fas fa-list me-2"></i>issued Book</a>
+                       </li>
+                        </ul>
+                    
+             </div>
+             </div>
+
+             <li class="nav-item">
+               <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#ssp" role="button" aria-expanded="false" aria-controls="ssp">
+                   <i class="fa fa-indian-rupee-sign me-2"></i>Subscription <span class="right-icon float-end"><i class="fas fa-chevron-down"></i></span>
+                 </a>
+                <div class="collapse" id="ssp">
+                <div>
+                   <ul class="navbar-nav ps-3">
+                       <li>
+                         <a class="nav-link" routerLink="/plan"><i class="far fa-plus me-2"></i>Plan</a>
+                       </li>
+                       <li>
+                         <a class="nav-link" routerLink="/History"><i class="fas fa-list me-2"></i>Purchase History</a>
+                       </li>
+                        </ul>
+                    
+             </div>
+             </div>
+           </li>
+
+           <li class="nav-item my-0">
+             <hr />  
+          </li>
+
+          <li class="nav-item">
+            <div class="text-secondary small text-uppercase fw-bold">Enquiry</div>
+          </li>
+
+          <li class="nav-item">
+             <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#enq" role="button" aria-expanded="false" aria-controls="enq">
+                 <i class="fa-solid fa-envelope me-2"></i>Enquiry Management <span class="right-icon float-end"><i class="fas fa-chevron-down"></i></span>
+               </a>
+              <div class="collapse" id="enq">
+              <div>
+                 <ul class="navbar-nav ps-3">
+                     <li>
+                       <a class="nav-link" routerLink="/enquiry"><i class="far fa-plus me-2"></i>All Enquiry</a>
+                     </li>
+                     
+                      </ul>
+                  
+           </div>
+           </div>
+
+         
+
+
+             
+           <li class="nav-item my-0">
+            <hr />  
+         </li>
+
+            <li class="nav-item">
+               <a class="nav-link active" aria-current="page" routerLink="/adminlogin"><i class="fa-solid fa-right-from-bracket me-2"></i>Logout</a>
+             </li>
+              
+
+
+         </ul>
+   </div>
+ 
+ </div>
+
+     <!--offcanvas ends-->
+ <!-- Main content start-->
+ <main class="mt-2 pt-4">
+     <div class="container-fluid">
+         <!--cards-->
+         <div class="row">
+             <div class="col-md-12">
+              <div class="row mb-4">
+                 <div class="col-sm-6">
+                     <h4><u>Add Book</u></h4>
+                 </div>
+                 <div class="col-sm-8">
+                     <ol class="breadcrumb float-sm-right">
+                         <li class="breadcrumb-item"><a href="#"><u> Home</u></a></li>
+                       
+                     </ol>
+                 </div>
+             </div>
+      </div>
+
+          <div class="col-md-12 ms-auto">
+            <div class="card">
+              <div class="card-header">
+           Add Book:
+              </div>
+          
+              <div class="card-body">
+               
+                <form (ngSubmit)="getbookData()" #formData="ngForm">
+                   <div class="row">
+                 
+                      <img src="../../../../assets/img/book.jpg"style="width:750px;height:575px; margin-top:-1.0rem">
+                    
+                      <div class="col-md-6">
+                    
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Book Title:</label>
+                          <input type="text" [(ngModel)]="book_title" name="book_titie" placeholder= "Write here Book name.."class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          
+                        </div>
+
+                        <div class="col-md-12"> 
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">ISBN Number:</label>
+                            <input type="text" [(ngModel)]="isbn" name="isbn" placeholder= "Write here ISBN No.."class="form-control"  id="exampleInputPassword1">
+                          </div>
+                     </div>
+                  
+                  
+
+               
+                  <div class="col-md-12"> 
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Author Name:</label>
+                    <input type="text"  [(ngModel)]="author" name="author" placeholder= "Write here Author name.."class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 "> 
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Publisher Name:</label>
+                    <input type="text" [(ngModel)]="publisher" name="publisher"placeholder= "Write here Publisher name.." class="form-control" id="exampleInputPassword1">
+                  </div>
+                 </div>
+
+                 <div class="col-md-12"> 
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Category:</label>
+                    <select class="form-control" [(ngModel)]="category" name="category">
+                    
+                      <option value=""disabled selected>Please select</option>
+                      <option>Drama</option>
+                      <option>Action</option>
+                      <option>Sci-Fi</option>
+                      <option>Financial Books</option>
+                      <option>Exam Books</option>
+                      <option>Others</option>
+                    </select>
+                  </div>
+                 </div>
+
+                 <div class="col-md-12 "> 
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Copies Available:</label>
+                    <input type="text" [(ngModel)]="copies" name="copies" placeholder= "Count here Books Copies.." class="form-control" id="exampleInputPassword1">
+                  </div>
+                 </div>
+
+                 <div class="col-md-12 "> 
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Status:</label>
+                    <select class="form-control" [(ngModel)]="description" name="description">
+                    
+                      <option value=""disabled selected>Please select</option>
+                      <option>Available</option>
+                      <option>All Rented</option>
+                   
+                    </select>
+                  </div>
+                 </div>
+
+                 
+                 <div class="col-md-12"> 
+                  <button type="submit" class="btn btn-success">Publish</button>&nbsp; 
+                 </div>
+                  </div>
+                  </div>
+
+
+                  
+                </form>
+              </div>
+          
+            </div>
+          </div>
+      
+      
+           
+         </div>
+     </div>
+
+ 
+ <!--main content ends-->
+     
+ 
+ 
+ 
