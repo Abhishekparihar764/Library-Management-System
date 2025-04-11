@@ -1,0 +1,362 @@
+
+        
+     
+<div class="offcanvas offcanvas-start  text-dark sidebar-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-body">
+       <ul class="navbar-nav">
+
+       
+       <li class="nav-item">
+         <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#admin" role="button" aria-expanded="false" aria-controls="admin">
+         <div class="text-secondary small text-uppercase fw-bold text-center"><i class="fas fa-user-secret"></i><br> Admin-Panel<span class="right-icon float-end"><i class="fas fa-chevron-down"></i></span></div>
+      </a>
+       <li class="nav-item">
+         
+           <div class="collapse" id="admin">
+           <div>
+              <ul class="navbar-nav ps-3">
+                  <li>
+                    <a class="nav-link" routerLink="/admin"><i class="fa fa-user me-2"></i>My Profile</a>
+                  </li>
+                  <li>
+                   <a class="nav-link" routerLink="/"><i class="fa-solid fa-right-from-bracket me-2"></i>Return Home page</a>
+                 </li>
+                 
+                   </ul>
+               
+        </div>
+        </div>
+       </li>
+        
+       <li class="nav-item my-0">
+        <hr />  
+     </li>
+
+
+       <li class="nav-item">
+       <div class="text-secondary small text-uppercase fw-bold">Core</div>
+       </li>
+       <li class="nav-item">
+       <a class="nav-link active" aria-current="page" routerLink="/admin"><i class="fas fa-tachometer-alt-fast"></i> Dashboard</a>
+       </li>
+            
+       <li class="nav-item my-0">
+         <hr />
+       </li>
+
+       <li class="nav-item">
+       <div class="text-secondary small text-uppercase fw-bold">Inventory</div>
+       </li>
+
+       <li class="nav-item">
+       <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#booksmgt" role="button" aria-expanded="false" aria-controls="booksmgt">
+       <i class="fas fa-book me-2"></i>Books Management <span class="right-icon float-end"><i class="fas fa-chevron-down"></i></span>
+       </a>
+       <div class="collapse" id="booksmgt">
+           <div>
+              <ul class="navbar-nav ps-3">
+                 <li>
+                    <a class="nav-link" routerLink="/addbook"><i class="far fa-plus me-2"></i>Add Book</a>
+                     </li>
+                  <li>
+                   <a class="nav-link" routerLink="/managebook"><i class="fas fa-list me-2"></i>Mange Book</a>
+                   </li>
+                      
+                     </ul>
+                    
+              </div>
+           </div>
+
+             <li class="nav-item">
+               <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#Mgmt" role="button" aria-expanded="false" aria-controls="Mgmt">
+                   <i class="fas fa-users me-1"></i>Members Management <span class="right-icon float-end"><i class="fas fa-chevron-down"></i></span>
+                 </a>
+                <div class="collapse" id="Mgmt">
+                <div>
+                   <ul class="navbar-nav ps-3">
+                       <li>
+                         <a class="nav-link" routerLink="/addmember"><i class="far fa-plus me-2"></i>Add Member</a>
+                       </li>
+                       <li>
+                         <a class="nav-link" routerLink="/managemember"><i class="fas fa-list me-2"></i>Manage Member</a>
+                       </li>
+                        </ul>
+                    
+                 </div>
+                </div>
+            </li>
+
+           <li class="nav-item">
+             <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#cm" role="button" aria-expanded="false" aria-controls="cm">
+                 <i class="fa-solid fa-pen-fancy me-1"></i>Classification Management<span class="right-icon float-end"><i class="fas fa-chevron-down"></i></span>
+               </a>
+              <div class="collapse" id="cm">
+              <div>
+                 <ul class="navbar-nav ps-3">
+                     <li>
+                       <a class="nav-link" routerLink="/author"><i class="fas fa-book-reader me-2"></i>Author Details</a>
+                     </li>
+                     <li>
+                       <a class="nav-link" routerLink="/publisher"><i class="fas fa-warehouse me-2"></i>Publisher details</a>
+                     </li>
+                      </ul>
+                  
+           </div>
+           </div>
+         </li>
+
+           <li class="nav-item my-0">
+               <hr />  
+            </li>
+
+            <li class="nav-item">
+              <div class="text-secondary small text-uppercase fw-bold">Business</div>
+            </li>
+
+            <li class="nav-item">
+               <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#booksloan" role="button" aria-expanded="false" aria-controls="booksloan">
+                   <i class="fa fa-institution me-2"></i>Books Loan <span class="right-icon float-end"><i class="fas fa-chevron-down"></i></span>
+                 </a>
+                <div class="collapse" id="booksloan">
+                <div>
+                   <ul class="navbar-nav ps-3">
+                       <li>
+                         <a class="nav-link" routerLink="/issue"><i class="far fa-plus me-2"></i>isuue Book</a>
+                       </li>
+                       <li>
+                         <a class="nav-link" routerLink="/issued"><i class="fas fa-list me-2"></i>issued Book</a>
+                       </li>
+                        </ul>
+                    
+             </div>
+             </div>
+
+             <li class="nav-item">
+               <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#ssp" role="button" aria-expanded="false" aria-controls="ssp">
+                   <i class="fa fa-indian-rupee-sign me-2"></i>Subscription <span class="right-icon float-end"><i class="fas fa-chevron-down"></i></span>
+                 </a>
+                <div class="collapse" id="ssp">
+                <div>
+                   <ul class="navbar-nav ps-3">
+                       <li>
+                         <a class="nav-link" routerLink="/plan"><i class="far fa-plus me-2"></i>Plan</a>
+                       </li>
+                       <li>
+                         <a class="nav-link" routerLink="/History"><i class="fas fa-list me-2"></i>Purchase History</a>
+                       </li>
+                        </ul>
+                    
+             </div>
+             </div>
+           </li>
+
+           <li class="nav-item my-0">
+             <hr />  
+          </li>
+
+          <li class="nav-item">
+            <div class="text-secondary small text-uppercase fw-bold">Enquiry</div>
+          </li>
+
+          <li class="nav-item">
+             <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#enq" role="button" aria-expanded="false" aria-controls="enq">
+                 <i class="fa-solid fa-envelope me-2"></i>Enquiry Management <span class="right-icon float-end"><i class="fas fa-chevron-down"></i></span>
+               </a>
+              <div class="collapse" id="enq">
+              <div>
+                 <ul class="navbar-nav ps-3">
+                     <li>
+                       <a class="nav-link" routerLink="/enquiry"><i class="far fa-plus me-2"></i>All Enquiry</a>
+                     </li>
+                     
+                      </ul>
+                  
+           </div>
+           </div>
+
+         
+
+
+             
+           <li class="nav-item my-0">
+            <hr />  
+         </li>
+
+            <li class="nav-item">
+               <a class="nav-link active" aria-current="page" routerLink="/adminlogin"><i class="fa-solid fa-right-from-bracket me-2"></i>Logout</a>
+             </li>
+              
+
+
+         </ul>
+   </div>
+ 
+ </div>
+
+               <!--offcanvas ends-->
+           <!-- Main content start-->
+           <main class="mt-1 pt-3">
+               <div class="container-fluid">
+                   <!--cards-->
+                   <div class="row">
+                       <div class="col-md-12">
+                        <div class="row mb-2">
+                           <div class="col-sm-6">
+                               <h4><u>Manage details</u> </h4>
+                           </div>
+                           <div class="col-sm-7">
+                               <ol class="breadcrumb float-sm-right">
+                                   <li class="breadcrumb-item"><a href="#">> Home</a></li>
+                                   <li class="breadcrumb-item active">Manage Details</li>
+                               </ol>
+                           </div>
+                       </div>
+                </div>
+                
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="recent-students-pane" role="tabpanel" aria-labelledby="recent-students" tabindex="0"></div>
+                  <table class="table">
+                    <thead class="table-dark">
+                      <tr>
+                      <th scope="col">Sr. No.</th>
+                      <th scope="col">ID:</th>
+                      <th scope="col">Member-ID:</th>
+                      <th scope="col">Member Name:</th>
+                      <th scope="col">Member Email:</th>
+                      <th scope="col">Phone:</th>
+                      <th scope="col">Date: </th>
+                      <th scope="col">Id-proof:</th>
+                      <th scope="col">Address:</th>
+                      <th scope="col">Status:</th>
+                      <th scope="col">Action:</th>
+                     
+                    </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let p of posts; let index= index">
+                      <th scope="row">{{index+1}}</th>
+                      <td>{{p.id}}</td>
+                      <td>{{p.member_id}}</td>
+                      <td>{{p.full_name}}</td>
+                      <td>{{p.email}}</td>
+                      <td>{{p.phone}}</td>
+                      <td>{{p.date}}</td>
+                     <td>{{p.id_proof}}</td>
+                    <td>{{p.Address}}</td>
+                      <td>
+                        <span [ngClass]="p.status === 'Active' ? 'badge text-bg-success' : 'badge text-bg-warning'">
+                          {{ p.status }}
+                        </span>
+                        </td>
+                        <td>
+                          <button class="btn btn-primary btn-edit"(click)="openEditModal(p)"><i class="fa fa-edit"></i></button>&nbsp; 
+                          <button class="btn btn-danger btn-delete"(click)="deletemem(p.id)"><i class="fa fa-trash"></i></button></td>
+                      </tr>
+                    </tbody>
+                   </table>
+                    </div>
+                     </div>
+               </div>
+           </main>
+          
+           
+           <!--main content ends-->
+               
+           
+           
+        
+
+   <div class="modal" id="editModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Update Memberform Details:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"(click)="closeModal()">
+            <i class="fa fa-close"></i>
+
+          </button>
+        </div>
+        <div class="modal-body">
+          <form  #formdata="ngForm">
+            <div class="row" style="padding:3rem">
+
+             <div class="col-md-6" style=" padding-left: 1rem;">
+               <div class="mb-3">
+                 <label for="exampleInputEmail1" class="form-label">Member-ID:</label>
+                 <input type="text" [(ngModel)]="member_id"  name="member_id" placeholder= "Write here Member Id no..."class="form-control" id="exampleInputmember" aria-describedby="emailHelp">
+                 
+               </div>
+               </div>
+               <div class="col-md-6">
+                 <div class="mb-3">
+                   <label for="exampleInputEmail1" class="form-label ">Member Name:</label>
+                   <input type="text" [(ngModel)]="full_name" name="full_name"  placeholder= "Write here Member name.." class="form-control" id="exampleInputmember" aria-describedby="emailHelp">
+                 </div>
+                 </div>
+
+                 <div class="col-md-6"> 
+                   <div class="mb-3">
+                     <label for="exampleInputPassword1" class="form-label">Member Email:</label>
+                     <input type="text" [(ngModel)]="email" name="email" placeholder= "Write here Member Email.." class="form-control" id="exampleInputemail">
+                   </div>
+             
+                 </div>
+
+                 
+           <div class="col-md-6"> 
+           <div class="mb-3">
+             <label for="exampleInputEmail1" class="form-label">Phone:</label>
+             <input type="text" [(ngModel)]="phone" name="phone" placeholder= "Write here Phone No.."class="form-control" id="exampleInputphone" aria-describedby="emailHelp">
+             </div>
+           </div>
+         
+
+           <div class="col-md-6"> 
+           <div class="mb-3">
+             <label for="exampleInputPassword1" class="form-label">Date:</label>
+             <input type="datetime-local" [(ngModel)]="date" name="date" class="form-control" id="exampleInputrole">
+           </div>
+          </div>
+
+          <div class="col-md-6"> 
+           <div class="mb-3">
+             <label for="exampleInputPassword1" class="form-label">ID-Proof:</label>
+             <input type="text" [(ngModel)]="id_proof" name="id_proof" placeholder= "Write here Aadhar card No./VoterId.." class="form-control" id="exampleInputrole">
+           </div>
+          </div>
+
+          <div class="col-md-6"> 
+           <div class="mb-3">
+             <label for="exampleInputPassword1" class="form-label">Address:</label>
+             <input type="text" [(ngModel)]="Address" name="Address" placeholder= "Write here address detail.." class="form-control" id="exampleInputAdress">
+           </div>
+          </div>
+
+          <div class="col-md-6"> 
+           <div class="mb-3">
+             <label for="exampleInputPassword1" class="form-label">Status:</label>
+            
+             <select class="form-control"  [(ngModel)]="status" name="status">
+               <option value=""disabled selected>Please select</option>
+               <option>Active</option>
+               <option>InActive</option>
+             
+             </select>
+         
+           </div>
+          </div>
+           </div>
+       </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal"   (click)="closeModal()">Cancel</button>
+          <button type="button" class="btn btn-primary" (click)="updatememData(formdata)">Save Changes</button>
+        </div>
+      </div>
+           
+           
+   <!--main content ends-->
+       
+   
+   
+   

@@ -1,0 +1,38 @@
+<div class="login-box" style="background-color: #f7f3f363;">
+  <div class="login-form-container">
+    <form [formGroup]="loginForm">
+      <h3>Admin Sign In</h3>
+      <div class="input-container">
+        <span>Email:</span>
+        <div class="input-with-icon">
+          <i class="fa fa-user-secret" style="margin-top:-0.41rem;margin-left: 0.6rem;"></i>
+          <input type="email" formControlName="email" class="box" placeholder="Enter your Email">
+        </div>
+        <div *ngIf="loginForm.get('email').hasError('required') && (loginForm.get('email').touched || loginForm.get('email').dirty)">
+          <h6><I>Note: Fill the blank email column*</I></h6>
+        </div>
+      </div><br>
+
+      <div class="input-container">
+        <span>Password:</span>
+        <div class="input-with-icon">
+          <i class="fas fa-lock" style="margin-top:-0.4rem;margin-left: 0.5rem;"></i>
+          <input type="password" formControlName="password" class="box" placeholder="Enter your Password">
+        </div>
+        <div *ngIf="loginForm.get('password').hasError('required') && (loginForm.get('password').touched || loginForm.get('password').dirty)">
+          <h6 ><I >Note: Fill the blank password column*</I></h6>
+        </div>
+      </div><br>
+
+      <div class="checkbox">
+        <input type="checkbox" name="" id="remember-me">
+        <label for="remember-me">Remember me</label>
+      </div>
+
+      <button class="btn btn-danger btn-submit" (click)="onLogin()">Login</button>
+      <br>
+      <br>
+      <p>Forgot password? <a routerLink="/forgotpassword">Click here.</a></p>
+    </form>
+  </div>
+</div>

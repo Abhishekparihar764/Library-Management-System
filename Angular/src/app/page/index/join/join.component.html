@@ -1,0 +1,166 @@
+<section class="book" id="book">
+    <div class="container-1">
+        <div class="main-text">
+         <h1><span>Be&nbsp;</span>A Part Of Our Library Community.!</h1>
+         <p  style="text-align: center;margin-left: 1rem;">(Join our library club for upcoming events and seminar or other facilities..)</p>
+
+        </div>
+     <div class="row ">
+            <div class="col-md-6 py-3 py-md-0">
+                <div class="card ">
+                    <section id="Subscripiton" style="background-color: antiquewhite"class="bg-silver-light">
+                        <div class="container"  >
+                            <div class="section-content">
+
+                                <div class="row" >
+                                    <div class="col-md-12" style="text-align:center;padding:10px;">
+                                        <h3>Subscription Chart</h3>
+                                        <p><u>*Provide Personal Cabine for Studies and Preparation Competition Exams</u> </p>
+                                        
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <table class="table table-bordered table-condensed table-hover" >
+                                            <thead>
+                                                <tr>
+                                                    <th style="background-color: antiquewhite">
+                                                        PLAN
+                                                    </th>
+                                                    <th style="background-color: antiquewhite">
+                                                       Basic
+                                                    </th>
+                                                    <th style="background-color: antiquewhite">
+                                                        Standard
+                                                    </th>
+                                                    <th style="background-color: antiquewhite">
+                                                       Premium
+                                                    </th>
+                                                    <th style="background-color: antiquewhite">
+                                                       Status
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                        <tr>
+                                                            <td style="background-color: antiquewhite">
+                                                                 Charge:
+                                                            </td>
+                                                            <td style="background-color: antiquewhite">
+                                                                Rs. 500
+                                                            </td>
+                                                            <td style="background-color: antiquewhite">
+                                                                Rs. 1200
+                                                            </td>
+
+                                                            <td style="background-color: antiquewhite" >
+                                                                Rs. 2500
+                                                            </td>
+                                                            <td style="background-color: antiquewhite">
+                                                               Active
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="background-color: antiquewhite">
+                                                                 Duration:
+                                                            </td>
+                                                            <td style="background-color: antiquewhite">
+                                                                 1 Month
+                                                            </td>
+                                                            <td style="background-color: antiquewhite">
+                                                                 3 Month
+                                                            </td>
+
+                                                            <td style="background-color: antiquewhite">
+                                                                 6 Month
+                                                            </td>
+                                                            <td style="background-color: antiquewhite"><b>
+                                                                 if Any of plan you want
+                                                                   write in Suggestion box =>
+                                                            </b>
+                                                            </td>
+                                                        </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                  <div class="img" style="margin-left:14rem; background-color: #fff;">
+                    <img src="../../../assets/img/6888600.jpg" alt="" width="400" height="420" style="margin-left: 15rem;">
+                    </div>
+                    <div class="table-section">
+                    <table class="table table-curved">
+                        <thead>
+                        <tr class="warning">
+                        <th style="text-align: center;color: #a94442;" colspan="2"><br>LIBRARY-HOURS:</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                        <td>(a) Mon - Sat</td>
+                        <td>08:00 AM - 11:00 PM</td>
+                        </tr>
+                        <tr>
+                        <td>(b) Sunday</td>
+                        <td>7:00 AM - 09:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>(c)Nation-Holiday</td>
+                            <td>Closed</td>
+                            </tr>
+                       
+                        
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 py-3 py-md-0">
+                <form  #formData="ngForm">
+                
+                 <input type="text" [(ngModel)]="full_name" name="full_name"  class=" form-control" placeholder="Card Holder name" required><br>
+               
+                 <input type="text" [(ngModel)]="email" name="email" class=" form-control" placeholder="Email" required><br>
+                 <input type="text" [(ngModel)]="id_proof" name="id_proof" class="form-control"  placeholder="id Proof( In no.)" required><br> 
+                 <input type="text" [(ngModel)]="phone" name="phone" class="form-control"  placeholder="Phone no." required><br> 
+                 <input type="text" [(ngModel)]="Address" name="Address" class="form-control" placeholder=" Address" required><br>
+                 <ul>
+                 <li><p>Preferred Date Of visit:</p></li>
+                 </ul>
+                 <input type="datetime-local" [(ngModel)]="prefer_visit" name="prefer_visit" class="form-control" placeholder="Prefer Visitinh slot:" required><br>
+                 <ul>
+                  
+                        <li><p>Exams You Prepare for:</p></li>
+                        </ul>
+                        <input type="text" [(ngModel)]="Exam_prepare_for" name="Exam_prepare_for" class="form-control" placeholder="Exams" required><br>
+                
+                 <textarea  [(ngModel)]="details" name="details"  class="form-control"  row="5"  placeholder=" Give us details about Your Plans .."></textarea>
+                 <label><b>(*Note:-Library-Card  will also make with this Subscription-form. if you are old subscriber and want to rejoin you can renew your library card service. and Refill the form again with latest details. )</b></label><br>  
+                 <button class="submit" type="button" (click)="onSubmit(formData)">
+                    <ng-container *ngIf="!formSubmitted; else successIcon">
+                        <i class="fa fa-times" *ngIf="formError"></i>
+                    </ng-container>
+                    <ng-template #successIcon>
+                        <i class="fas fa-check success-icon"></i>
+                    </ng-template>
+                    Join
+                </button>
+                
+                
+            </form>
+
+            
+            
+            </div>
+        </div>
+<hr />
+
+       </div>
+       
+       
+</section>

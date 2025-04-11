@@ -1,0 +1,77 @@
+
+    <section class="book" id="book">
+        <div class="container-1">
+            <div class="main-text">
+             <h1><span>Be&nbsp;</span>A Part Of Our Library Community.!</h1>
+             <p style="text-align: center;margin-left: 1rem;"><b>(Thank you for your interest in becoming a member of PubliC-Library and gaining access to our vast collection of books. Please fill out the following form to complete your membership application)</b></p>
+               <p  style="text-align: center;margin-left: 1rem;"><b>(*Join our library club for upcoming events and seminar or other facilities..)</b></p>
+    
+            </div>
+         <div class="row ">
+                <div class="col-md-6 ">
+                    <div class="card ">
+                        <br>
+                        <div class="container-fluid" style="background-color: antiquewhite; margin-top:-1.5rem;"><br>
+                        <h2 style="text-align: center; "><u>Membership Benefits:</u></h2><br>
+                 <p style="margin-left: 1rem;">As a valued member of Public-Library, you will enjoy the following benefits:</p>
+            <ul>
+            <li>Access to a diverse collection of books across various genres.</li>
+            <li>Ability to borrow up to four books at a time.</li>
+            <li>Option to keep the books for up to One weeks (subject to renewal).</li>
+            <li>Access to special events, book clubs, and author meet-ups.</li>
+            <li>Exclusive discounts on library-sponsored programs and workshops.</li>
+          </ul><br>
+        </div>
+                      <div class="img" style="margin-left:14rem; background-color: #fff;">
+                        <img src="../../../assets/img/6888600.jpg" alt="" width="400" height="420" style="margin-left: 15rem;">
+                        </div>
+                        <div class="table-section">
+                        <h2>Terms and Conditions:</h2>
+                   <p>By signing this membership form, you agree to abide by the library's rules and regulations, including but not limited to:</p>
+               <ul> 
+                   <li>Taking responsibility for any damage or loss of borrowed books.</li>
+                   <li>Returning borrowed books on or before the due date to avoid late fees.</li>
+                   <li>Keeping your contact information up to date to receive library notifications.</li>
+                   <li>Respecting other library members and staff.</li>
+                   <li><b>Whenever You want to borrow a Book you have to Refill form again with Your latest Details.</b></li>
+              </ul>
+        </div>
+     </div>
+ </div>
+    
+                <div class="col-md-6 py-3 py-md-0">
+                    <form  #formData="ngForm">
+                    
+                     <input type="text" [(ngModel)]="full_Name" name="full_Name" class=" form-control" placeholder="Full Name" required><br>
+                     <input type="text" [(ngModel)]="email" name="email" class="form-control" placeholder="Email" required><br>
+                     <input type="datetime-local" [(ngModel)]="Date" name="Date" class=" form-control" placeholder="Date of Birth" required><br>
+                    
+                     <input type="text" [(ngModel)]="id_proof" name="id_proof" class="form-control"  placeholder="id Proof( In No.)" required><br> 
+                     <input type="text" [(ngModel)]="phone" name="phone" class="form-control"  placeholder="Phone no."required><br> 
+                     <input type="text" [(ngModel)]="Address" name="Address" class="form-control" placeholder="Address" required><br>
+                     <input type="text" [(ngModel)]="Book_name" name="Book_name" class="form-control" placeholder="Book Name"><br>
+                     <input type="text" [(ngModel)]="Author" name="Author" class="form-control" placeholder="Author" ><br>                       
+                     <input type="text" [(ngModel)]="prefer_Newspaper" name="prefer_Newspaper" class="form-control" placeholder="Prefered-Newspaper"><br>
+                     <input type="text" [(ngModel)]="year_of_Newspaper" name="year_of_Newspaper" class="form-control" placeholder="Years of Newspapers Required for Preparation:"><br>
+                     <label><b>(*Note:-Library-Card  will also make with this Membership-form.)</b></label><br>  
+                     <p><b>(Late Fees will be 20/- after 1 Week And if Any Case you Lost the book the charge will be according to Book price or you bought same book and Submit to library.)</b></p>
+                     
+                     <button class="submit" type="button" (click)="onSubmit(formData)">
+                        <ng-container *ngIf="!formSubmitted; else successIcon">
+                            <i class="fa fa-times" *ngIf="formError"></i>
+                        </ng-container>
+                        <ng-template #successIcon>
+                            <i class="fas fa-check success-icon"></i>
+                        </ng-template>
+                        Submit
+                    </button>
+                </form>
+                </div>
+            </div>
+            <hr />
+         </div>
+    </section>
+    
+      
+
+       

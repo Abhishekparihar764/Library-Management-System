@@ -1,0 +1,503 @@
+
+
+        
+     
+<div class="offcanvas offcanvas-start  text-dark sidebar-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-body">
+         <ul class="navbar-nav">
+
+         
+         <li class="nav-item">
+           <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#admin" role="button" aria-expanded="false" aria-controls="admin">
+           <div class="text-secondary small text-uppercase fw-bold text-center"><i class="fas fa-user-secret"></i><br> Admin-Panel<span class="right-icon float-end"><i class="fas fa-chevron-down"></i></span></div>
+        </a>
+         <li class="nav-item">
+           
+             <div class="collapse" id="admin">
+             <div>
+                <ul class="navbar-nav ps-3">
+                    <li>
+                      <a class="nav-link" routerLink="/profile"><i class="fa fa-user me-2"></i>My Profile</a>
+                    </li>
+                    <li>
+                     <a class="nav-link" routerLink="/index"><i class="fa-solid fa-right-from-bracket me-2"></i>Return Home page</a>
+                   </li>
+                   
+                     </ul>
+                 
+          </div>
+          </div>
+         </li>
+          
+         <li class="nav-item my-0">
+          <hr />  
+       </li>
+
+
+         <li class="nav-item">
+         <div class="text-secondary small text-uppercase fw-bold">Core</div>
+         </li>
+         <li class="nav-item">
+         <a class="nav-link active" aria-current="page" routerLink="/admin"><i class="fas fa-tachometer-alt-fast"></i> Dashboard</a>
+         </li>
+              
+         <li class="nav-item my-0">
+           <hr />
+         </li>
+
+         <li class="nav-item">
+         <div class="text-secondary small text-uppercase fw-bold">Inventory</div>
+         </li>
+
+         <li class="nav-item">
+         <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#booksmgt" role="button" aria-expanded="false" aria-controls="booksmgt">
+         <i class="fas fa-book me-2"></i>Books Management<span class="right-icon float-end"><i class="fas fa-chevron-down"></i></span>
+         </a>
+         <div class="collapse" id="booksmgt">
+             <div>
+                <ul class="navbar-nav ps-3">
+                   <li>
+                      <a class="nav-link" routerLink="/addbook"><i class="far fa-plus me-2"></i>Add Book</a>
+                       </li>
+                    <li>
+                     <a class="nav-link" routerLink="/managebook"><i class="fas fa-list me-2"></i>Mange Book</a>
+                     </li>
+                        
+                       </ul>
+                      
+                </div>
+             </div>
+
+               <li class="nav-item">
+                 <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#Mgmt" role="button" aria-expanded="false" aria-controls="Mgmt">
+                     <i class="fas fa-users me-1"></i>Members Management <span class="right-icon float-end"><i class="fas fa-chevron-down"></i></span>
+                   </a>
+                  <div class="collapse" id="Mgmt">
+                  <div>
+                     <ul class="navbar-nav ps-3">
+                         <li>
+                           <a class="nav-link" routerLink="/addmember"><i class="far fa-plus me-2"></i>Add Member</a>
+                         </li>
+                         <li>
+                           <a class="nav-link" routerLink="/managemember"><i class="fas fa-list me-2"></i>Manage Member</a>
+                         </li>
+                          </ul>
+                      
+                   </div>
+                  </div>
+              </li>
+
+             <li class="nav-item">
+               <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#cm" role="button" aria-expanded="false" aria-controls="cm">
+                   <i class="fa-solid fa-pen-fancy me-1"></i>Classification Management<span class="right-icon float-end"><i class="fas fa-chevron-down"></i></span>
+                 </a>
+                <div class="collapse" id="cm">
+                <div>
+                   <ul class="navbar-nav ps-3">
+                       <li>
+                         <a class="nav-link" routerLink="/author"><i class="fas fa-book-reader me-2"></i>Author Details</a>
+                       </li>
+                       <li>
+                         <a class="nav-link" routerLink="/publisher"><i class="fas fa-warehouse me-2"></i>Publisher details</a>
+                       </li>
+                        </ul>
+                    
+             </div>
+             </div>
+           </li>
+
+             <li class="nav-item my-0">
+                 <hr />  
+              </li>
+
+              <li class="nav-item">
+                <div class="text-secondary small text-uppercase fw-bold">Business</div>
+              </li>
+
+              <li class="nav-item">
+                 <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#booksloan" role="button" aria-expanded="false" aria-controls="booksloan">
+                     <i class="fa fa-institution me-2"></i>Books Loan <span class="right-icon float-end"><i class="fas fa-chevron-down"></i></span>
+                   </a>
+                  <div class="collapse" id="booksloan">
+                  <div>
+                     <ul class="navbar-nav ps-3">
+                         <li>
+                           <a class="nav-link" routerLink="/issue"><i class="far fa-plus me-2"></i>isuue Book</a>
+                         </li>
+                         <li>
+                           <a class="nav-link" routerLink="/issued"><i class="fas fa-list me-2"></i>issued Book</a>
+                         </li>
+                          </ul>
+                      
+               </div>
+               </div>
+
+               <li class="nav-item">
+                 <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#ssp" role="button" aria-expanded="false" aria-controls="ssp">
+                     <i class="fa fa-indian-rupee-sign me-2"></i>Subscription <span class="right-icon float-end"><i class="fas fa-chevron-down"></i></span>
+                   </a>
+                  <div class="collapse" id="ssp">
+                  <div>
+                     <ul class="navbar-nav ps-3">
+                         <li>
+                           <a class="nav-link" routerLink="/plan"><i class="far fa-plus me-2"></i>Plan</a>
+                         </li>
+                         <li>
+                           <a class="nav-link" routerLink="/History"><i class="fas fa-list me-2"></i>Purchase History</a>
+                         </li>
+                          </ul>
+                      
+               </div>
+               </div>
+             </li>
+
+             <li class="nav-item my-0">
+               <hr />  
+            </li>
+
+            <li class="nav-item">
+              <div class="text-secondary small text-uppercase fw-bold">Enquiry</div>
+            </li>
+
+            <li class="nav-item">
+               <a class="nav-link sidebar-link" data-bs-toggle="collapse" href="#enq" role="button" aria-expanded="false" aria-controls="enq">
+                   <i class="fa-solid fa-envelope me-2"></i>Enquiry Management <span class="right-icon float-end"><i class="fas fa-chevron-down"></i></span>
+                 </a>
+                <div class="collapse" id="enq">
+                <div>
+                   <ul class="navbar-nav ps-3">
+                       <li>
+                         <a class="nav-link" routerLink="/enquiry"><i class="far fa-plus me-2"></i>All Enquiry</a>
+                       </li>
+                       
+                        </ul>
+                    
+             </div>
+             </div>
+
+           
+
+
+               
+             <li class="nav-item my-0">
+              <hr />  
+           </li>
+
+              <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" routerLink="/login"><i class="fa-solid fa-right-from-bracket me-2"></i>Logout</a>
+               </li>
+                
+
+
+           </ul>
+     </div>
+   
+   </div>
+
+   <!--offcanvas ends-->
+<!-- Main content start-->
+<main class="mt-1 pt-3">
+    <div class="container-fluid">
+        <!--cards-->
+        <div class="row">
+            <div class="col-md-12">
+             <div class="row mb-5">
+                <div class="col-sm-6 ms-2">
+                  <h4><u>Dashboard</u></h4>
+                </div>
+                <div class="col-sm-7 ms-2">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">> Home</a></li>
+                        <li class="breadcrumb-item active"><u>Dashboard </u></li>
+                    </ol>
+                </div>
+            </div>
+     </div>
+        
+     
+     
+            <div class="col-md-3">
+              
+                <div class="card">
+                 
+                    <div class="card-body" style="padding: 2rem;padding-top: 1rem;">
+                      <div class="icon" style="margin-left:14rem; font-size: xxx-large;margin-top:2rem;">
+                        <i  style="margin-top:-5rem; padding:1rem;"class = "fa fa-book"></i>
+                      </div>
+                     <div class="card-form " style= "margin-top:-4.8rem;margin-left:1rem">
+                       <h1  style="margin-left:1rem;">180</h1>
+                       
+                      <h6 class="card-title text-uppercase text-muted">Total Books</h6>
+                    </div>  
+                    </div>
+                  </div>
+              </div>
+ 
+              <div class="col-md-3">
+              
+                <div class="card">
+                 
+                    <div class="card-body" style="padding: 2rem;padding-top: 1rem;">
+                      <div class="icon" style="margin-left:14rem; font-size: xxx-large;margin-top:2rem;">
+                        <i  style="margin-top:-5rem; padding:1rem;"class = "fa fa-users"></i>
+                      </div>
+                     <div class="card-form " style= "margin-top:-4.8rem;margin-left:1rem">
+                       <h1  style="margin-left:1rem;">25</h1>
+                       
+                      <h6 class="card-title text-uppercase text-muted">Total Subscribers</h6>
+                    </div>  
+                    </div>
+                  </div>
+              </div>
+ 
+ 
+              <div class="col-md-3">
+              
+                <div class="card">
+                 
+                    <div class="card-body" style="padding: 2rem;padding-top: 1rem;">
+                      <div class="icon" style="margin-left:14rem; font-size: xxx-large;margin-top:2rem;">
+                        <i  style="margin-top:-5rem; padding:1rem;"class = "fa fa-coins"></i>
+                      </div>
+                     <div class="card-form " style= "margin-top:-4.8rem;margin-left:1rem">
+                       <h1 >55000/-</h1>
+                       
+                      <h6 class="card-title text-uppercase text-muted">Total Revenue</h6>
+                    </div>  
+                    </div>
+                  </div>
+              </div>
+ 
+ 
+              <div class="col-md-3">
+              
+                <div class="card">
+                 
+                    <div class="card-body" style="padding: 2rem;padding-top: 1rem;">
+                      <div class="icon" style="margin-left:14rem; font-size: xxx-large;margin-top:2rem;">
+                        <i  style="margin-top:-5rem; padding:1rem;"class = "fa fa-address-book"></i>
+                      </div>
+                     <div class="card-form " style= "margin-top:-4.8rem;margin-left:1rem">
+                       <h1  style="margin-left:1rem;">68</h1>
+                       
+                      <h6 class="card-title text-uppercase text-muted">Total Book issued</h6>
+                    </div>  
+                    </div>
+                  </div>
+              </div>
+              
+              <hr />
+        <!--tabs-->
+ 
+        
+       
+   <div class="row-mt-5">
+        <div class="col-md-12">
+         
+   
+ 
+          
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="recent-students" data-bs-toggle="tab" data-bs-target="#recent-students-pane" type="button" role="tab" aria-controls="recent-students-pane" aria-selected="true">New Members</button>
+                </li>
+             
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="recent-subs-tab" data-bs-toggle="tab" data-bs-target="#recent-subs-tab-pane" type="button" role="tab" aria-controls="recent-subs-tab-pane" aria-selected="false">Recent Subscription</button>
+                </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="recent-charts-tab" data-bs-toggle="tab" data-bs-target="#recent-charts-tab-pane" type="button" role="tab" aria-controls="recent-charts-tab-pane" aria-selected="false">Charts</button>
+              </li>
+           
+                
+              </ul>
+
+              
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="recent-students-pane" role="tabpanel" aria-labelledby="recent-students" tabindex="0">
+                <table class="table">
+                  <thead class="table-dark">
+                    <tr>
+                      <th scope="col">Sr.no.</th>
+                      <th scope="col">Member  ID:</th>
+                      <th scope="col">Member Name:</th>
+                      <th scope="col">Member-Email:</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">ID-Proof:</th>
+                      <th scope="col">Phone:</th>
+                      <th scope="col">Address</th>
+                      <th scope="col">Book-Name:</th>
+                      <th scope="col">Author-Name:</th>
+                      <th scope="col">Prefer Newspaper:</th>
+                      <th scope="col">Edition Year/Months:</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr  *ngFor="let p of posts; let index= index">
+                      <th scope="row">{{index+1}}</th>
+                      <td>{{p.id}}</td>
+                      <td>{{p.full_Name}}</td>
+                      <td>{{p.email}}</td>
+                      <td>{{p.Date}}</td>
+                      <td>{{p.id_proof}}</td>
+                      <td>{{p.phone}}</td>
+                      <td>{{p.Address}}</td>
+                      <td>{{p.Book_name}}</td>
+                      <td>{{p.Author}}</td>
+                      <td>{{p.prefer_Newspaper}}</td>
+                      <td>{{p.year_of_Newspaper}}</td>
+                      <td>
+                        <button class="btn btn-primary btn-edit"(click)="openmem(p)">Edit Details&nbsp;<i class="fa fa-edit"></i></button>&nbsp; 
+                        <button  class="btn btn-danger btn-delete"  (click)="deletememdetail(p.id)">Reject Request&nbsp;<i class="fa fa-trash"></i></button></td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                </div>
+
+                <!-- Modal for Edit Form -->
+
+
+               
+ 
+                <div class="tab-pane fade" id="recent-subs-tab-pane" role="tabpanel" aria-labelledby="recent-subs-tab" tabindex="0">
+                   <table class="table">
+                  <thead class="table-dark">
+                   <tr>
+                <th scope="col">Sr.No.</th>
+                <th scope="col">Subscriber ID:</th>
+                <th scope="col">full Name:</th>
+                <th scope="col">Subscriber Email:</th>
+                <th scope="col">ID-Proof:</th>
+                <th scope="col">Phone:</th>
+                <th scope="col">Address</th>
+                <th scope="col">Date-Of-Visit:</th>
+                <th scope="col">Exams Prepare For:</th>
+                <th scope="col">Plan:</th>
+                <th scope="col">Action</th>
+              </tr>
+                  </thead>
+                  <tbody>
+                   <tr  *ngFor="let p of posts3; let index= index">
+                <th scope="row">{{index+1}}</th>
+                <td>{{p.id}}</td>
+                <td>{{p.full_Name}}</td>
+                <td>{{p.email}}</td>
+                <td>{{p.id_proof}}</td>
+                <td>{{p.phone}}</td>
+                <td>{{p.Address}}</td>
+                <td>{{p.prefer_visit}}</td>
+                <td>{{p.Exam_prepare_for}}</td>
+                <td>{{p.details}}</td>
+                  <td>
+                    <button class="btn btn-primary btn-edit"(click)="opensubs(p)">Edit Details&nbsp;<i class="fa fa-edit"></i></button>&nbsp; 
+                    <button class="btn btn-danger btn-delete"  (click)="deleteseat(p.id)">Reject Request&nbsp;<i class="fa fa-trash"></i></button></td>
+                    </tr>
+                  </tbody>
+              </table>
+            </div>
+             
+ <div class="tab-pane fade" id="recent-charts-tab-pane" role="tabpanel" aria-labelledby="recent-charts-tab" tabindex="0" class="table-pane fade">
+
+<div class="image-1">
+  <img style="margin-left: 5rem;margin-top: 7rem;"src="assets/../../../../assets/img/double-axis-line-graph-and-bar-chart-in-year-over-year-growth-chart-069.jpg" alt="" />
+  
+  <img style="margin-left: 10rem;margin-top: 7rem;" src="assets/../../../../assets/img/progress-chart-in-year-over-year-growth-chart-069.jpg" alt="" />
+</div>
+
+</div>
+                
+
+      <div class="modal" id="editModal1" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Update Subscriber</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"(click)="closesubs()">
+                <i class="fa fa-close"></i>
+
+              </button>
+            </div>
+            <div class="modal-body">
+              <form (ngSubmit)="updateseatData(formData)" #formData="ngForm">
+                
+                <input type="text" [(ngModel)]="full_name" name="full_name"  class=" form-control" placeholder="full name" required><br>
+                <input type="text" [(ngModel)]="email" name="email" class=" form-control" placeholder="Email" required><br>
+                <input type="text" [(ngModel)]="id_proof" name="id_proof" class="form-control"  placeholder="id Proof( In no.)" required><br> 
+                <input type="text" [(ngModel)]="phone" name="phone" class="form-control"  placeholder="Phone no."required><br> 
+                <input type="text" [(ngModel)]="Address" name="Address" class="form-control" placeholder=" Address" required><br>
+                <ul>
+                <li><p>Preferred Date Of visit:</p></li>
+                </ul>
+                <input type="datetime-local" [(ngModel)]="prefer_visit" name="prefer_visit" class="form-control" placeholder="Prefer Visitinh slot:" required><br>
+                <ul>
+                 
+                       <li><p>Exams You Prepare for:</p></li>
+                       </ul>
+                       <input type="text" [(ngModel)]="Exam_prepare_for" name="Exam_prepare_for" class="form-control" placeholder="Exams" required><br>
+               
+                <textarea  [(ngModel)]="details" name="details"  class="form-control"  row="5"  placeholder=" Give us details about Your Plans .."></textarea>
+                
+           </form>
+            
+        
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal"   (click)="closesubs()">Cancel</button>
+              <button type="button" class="btn btn-primary" (click)="updateseatData(formData)" >Save Changes</button>
+            </div>
+          </div>
+       
+         
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <div class="modal" id="editModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Update Member</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"(click)="closemem()">
+            <i class="fa fa-close"></i>
+
+          </button>
+        </div>
+        <div class="modal-body">
+       
+          <form (ngSubmit)="updatememdetailData(formData)" #formData="ngForm">
+                    
+            <input type="text" [(ngModel)]="full_Name" name="full_Name" class=" form-control" placeholder="Full Name" required><br>
+            <input type="text" [(ngModel)]="email" name="email" class="form-control" placeholder="Email" required><br>
+            <input type="datetime-local" [(ngModel)]="Date" name="Date" class=" form-control" placeholder="Date of Birth" required><br>
+           
+            <input type="text" [(ngModel)]="id_proof" name="id_proof" class="form-control"  placeholder="id Proof( In No.)" required><br> 
+            <input type="text" [(ngModel)]="phone" name="phone" class="form-control"  placeholder="Phone no."required><br> 
+            <input type="text" [(ngModel)]="Address" name="Address" class="form-control" placeholder="Address" required><br>
+            <input type="text" [(ngModel)]="Book_name" name="Book_name" class="form-control" placeholder="Book Name"><br>
+            <input type="text" [(ngModel)]="Author" name="Author" class="form-control" placeholder="Author" ><br>                       
+            <input type="text" [(ngModel)]="prefer_Newspaper" name="prefer_Newspaper" class="form-control" placeholder="Prefered-Newspaper"><br>
+            <input type="text" [(ngModel)]="year_of_Newspaper" name="year_of_Newspaper" class="form-control" placeholder="Years of Newspapers Required for Preparation:"><br>
+          
+       
+           
+       </form>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal"   (click)="closemem()">Cancel</button>
+          <button type="button" class="btn btn-primary" (click)="updatememdetailData(formData)">Save Changes</button>
+        </div>
+      </div>
+   
+     
+
+
+
+ <!--main content ends-->
+    
+ 
+
+ 
